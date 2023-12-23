@@ -1,3 +1,3 @@
-return { 
+return {
   "alexghergh/nvim-tmux-navigation"
 }
