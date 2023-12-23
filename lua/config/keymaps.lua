@@ -56,6 +56,14 @@ vim.keymap.set('n', '<leader>w=', '<C-w>=', { desc = 'Equally high and wide' })
 vim.keymap.set('n', '<leader>wq', '<C-w>q', { desc = 'Quit a window' })
 vim.keymap.set('n', '<leader>wx', '<C-w>x', { desc = 'Swap current with next' })
 
+-- Buffers
+vim.keymap.set('n', '<leader>bd', '<CMD>bd<CR>', { desc = 'Close current buffer' })
+vim.keymap.set('n', 'H', '<CMD>bp<CR>', { desc = 'Previous buffer' })
+vim.keymap.set('n', 'L', '<CMD>bn<CR>', { desc = 'Next buffer' })
+
+-- Lazy
+vim.keymap.set('n', '<leader>l', '<CMD>Lazy<CR>', { desc = 'Lazy' })
+
 -- Telescope
 local telescopeBuiltIn = require('telescope.builtin')
 local telescopeThemes = require('telescope.themes')
@@ -85,8 +93,9 @@ vim.keymap.set('n', '<leader>s/', function ()
   }
 end, { desc = '[S]earch [/] in Open Files' })
 
+
 -- Neo-Tree
-vim.keymap.set('n', '<leader>e', '<CMD>Neotree toggle<CR>')
+vim.keymap.set('n', '<leader>e', '<CMD>Neotree toggle<CR>', { desc = 'Toggle Neotree' })
 
 
 -- Git

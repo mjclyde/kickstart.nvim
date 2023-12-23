@@ -490,6 +490,8 @@ cmp.setup {
   },
 }
 
+require('bufferline').setup()
+
 -- [[ Setting options ]]
 -- See `:help vim.o`
 require('config.options')
@@ -497,6 +499,7 @@ require('config.options')
 -- [[ Basic Keymaps ]]
 -- See `:help vim.keymap.set()`
 require('config.keymaps')
+
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
