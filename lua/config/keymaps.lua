@@ -87,3 +87,6 @@ vim.keymap.set('n', '<leader>s/', function ()
   }
 end, { desc = '[S]earch [/] in Open Files' })
 
+-- Neo-Tree
+vim.keymap.set('n', '<leader>e', '<CMD>Neotree toggle<CR>')
+
