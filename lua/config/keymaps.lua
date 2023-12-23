@@ -46,8 +46,6 @@ vim.keymap.set("n", "zl", ":vert res -5<CR>", { silent = true })
 vim.keymap.set("n", "zk", ":res +5<CR>", { silent = true })
 vim.keymap.set("n", "zj", ":res -5<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>gs", "<CMD>G<CR>")
-
 -- Windows
 vim.keymap.set('n', '<leader>|', '<C-w>v', { desc = 'Split window vertically' })
 vim.keymap.set('n', '<leader>-', '<C-w>s', { desc = 'Split window horizontally' })
@@ -90,3 +88,8 @@ end, { desc = '[S]earch [/] in Open Files' })
 -- Neo-Tree
 vim.keymap.set('n', '<leader>e', '<CMD>Neotree toggle<CR>')
 
+
+-- Git
+vim.keymap.set('n', '<leader>gs', '<CMD>G<CR>', { desc = 'Status' })
+vim.keymap.set('n', '<leader>gp', '<CMD>G pull<CR>', { desc = 'Pull' })
+vim.keymap.set('n', '<leader>gP', '<CMD>G push<CR>', { desc = 'Push' })
