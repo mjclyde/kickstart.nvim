@@ -12,7 +12,7 @@ vim.keymap.set("n", "<C-j>", nvim_tmux_nav.NvimTmuxNavigateDown)
 vim.keymap.set("n", "<C-k>", nvim_tmux_nav.NvimTmuxNavigateUp)
 vim.keymap.set("n", "<C-l>", nvim_tmux_nav.NvimTmuxNavigateRight)
 vim.keymap.set("n", "<C-\\>", nvim_tmux_nav.NvimTmuxNavigateLastActive)
-vim.keymap.set("n", "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
+vim.keymap.set("n", "<C-Spkce>", nvim_tmux_nav.NvimTmuxNavigateNext)
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
@@ -48,6 +48,15 @@ vim.keymap.set("n", "zj", ":res -5<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>gs", "<CMD>G<CR>")
 
+-- Windows
+vim.keymap.set('n', '<leader>|', '<C-w>v', { desc = 'Split window vertically' })
+vim.keymap.set('n', '<leader>-', '<C-w>s', { desc = 'Split window horizontally' })
+vim.keymap.set('n', '<leader>wo', '<C-w>o', { desc = 'Close all other windows' })
+vim.keymap.set('n', '<leader>w|', '<C-w>|', { desc = 'Max out the width' })
+vim.keymap.set('n', '<leader>w-', '<C-w>_', { desc = 'Max out the height' })
+vim.keymap.set('n', '<leader>w=', '<C-w>=', { desc = 'Equally high and wide' })
+vim.keymap.set('n', '<leader>wq', '<C-w>q', { desc = 'Quit a window' })
+vim.keymap.set('n', '<leader>wx', '<C-w>x', { desc = 'Swap current with next' })
 
 -- Telescope
 local telescopeBuiltIn = require('telescope.builtin')
@@ -77,3 +86,4 @@ vim.keymap.set('n', '<leader>s/', function ()
     prompt_title = 'Live Grep in Open Files',
   }
 end, { desc = '[S]earch [/] in Open Files' })
+
