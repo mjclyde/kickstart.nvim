@@ -100,5 +100,7 @@ vim.keymap.set('n', '<leader>e', '<CMD>Neotree toggle<CR>', { desc = 'Toggle Neo
 
 -- Git
 vim.keymap.set('n', '<leader>gs', '<CMD>G<CR>', { desc = 'Status' })
-vim.keymap.set('n', '<leader>gp', '<CMD>G pull<CR>', { desc = 'Pull' })
-vim.keymap.set('n', '<leader>gP', '<CMD>G push<CR>', { desc = 'Push' })
+vim.keymap.set('n', '<leader>gl', '<CMD>G pull<CR>', { desc = 'Pull' })
+vim.keymap.set('n', '<leader>gp', '<CMD>G push<CR>', { desc = 'Push' })
+vim.keymap.set('n', '<leader>go', '<CMD>Flog -all<CR>', { desc = 'Graph' })
+
