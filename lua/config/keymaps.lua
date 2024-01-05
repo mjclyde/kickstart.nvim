@@ -46,6 +46,8 @@ vim.keymap.set("n", "zl", ":vert res -5<CR>", { silent = true })
 vim.keymap.set("n", "zk", ":res +5<CR>", { silent = true })
 vim.keymap.set("n", "zj", ":res -5<CR>", { silent = true })
 
+vim.keymap.set("n", "<CR>", "<CMD>noh<CR>", { noremap = true })
+
 -- Windows
 vim.keymap.set('n', '<leader>|', '<C-w>v', { desc = 'Split window vertically' })
 vim.keymap.set('n', '<leader>-', '<C-w>s', { desc = 'Split window horizontally' })

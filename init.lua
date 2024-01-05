@@ -167,7 +167,7 @@ require('lazy').setup({
       options = {
         icons_enabled = false,
         theme = 'onedark',
-        component_separators = '|',
+        component_separators = '•',
         section_separators = '',
       },
     },
@@ -228,6 +228,7 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   { import = 'custom.plugins' },
+  { import = 'custom.colors' },
 }, {})
 
 -- [[ Highlight on yank ]]

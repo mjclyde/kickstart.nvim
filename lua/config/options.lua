@@ -13,10 +13,11 @@ vim.o.incsearch = true
 vim.o.colorcolumn = "100"
 
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 
--- Make line numbers default
-vim.wo.number = true
+-- Set hybrid line number and relative number
+vim.wo.relativenumber = true
+vim.wo.rnu = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
