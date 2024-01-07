@@ -16,7 +16,7 @@ vim.o.colorcolumn = "100"
 vim.o.hlsearch = true
 
 -- Set hybrid line number and relative number
-vim.wo.relativenumber = true
+vim.wo.nu = true
 vim.wo.rnu = true
 
 -- Enable mouse mode
