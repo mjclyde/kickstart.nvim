@@ -106,3 +106,13 @@ vim.keymap.set('n', '<leader>gl', '<CMD>G pull<CR>', { desc = 'Pull' })
 vim.keymap.set('n', '<leader>gp', '<CMD>G push<CR>', { desc = 'Push' })
 vim.keymap.set('n', '<leader>go', '<CMD>Flog -all<CR>', { desc = 'Graph' })
 
+-- Trouble
+vim.keymap.set('n', '<leader>xx', '<CMD>TroubleToggle<CR>', { desc = 'Toggle Trouble', noremap = true })
+vim.keymap.set('n', '<leader>xw', '<CMD>TroubleToggle workspace_diagnostics<CR>', { desc = 'Workspace Diagnostics', noremap = true })
+vim.keymap.set('n', '<leader>xd', '<CMD>TroubleToggle document_diagnostics<CR>', { desc = 'Document Diagnostics', noremap = true })
+vim.keymap.set('n', '<leader>xq', '<CMD>TroubleToggle quickfix<CR>', { desc = 'Quickfix', noremap = true })
+vim.keymap.set('n', '<leader>xl', '<CMD>TroubleToggle loclist<CR>', { desc = 'Location list', noremap = true })
+vim.keymap.set('n', '<leader>xr', '<CMD>TroubleToggle lsp_references<CR>', { desc = 'References', noremap = true })
+vim.keymap.set('n', '<leader>xd', '<CMD>TroubleToggle lsp_definitions<CR>', { desc = 'Definitions', noremap = true })
+vim.keymap.set('n', '<leader>xt', '<CMD>TroubleToggle lsp_type_definitions<CR>', { desc = 'Type Definitions', noremap = true })
+
